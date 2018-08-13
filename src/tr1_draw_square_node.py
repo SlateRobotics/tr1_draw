@@ -30,10 +30,10 @@ group.set_planning_time(5)
 group.set_goal_orientation_tolerance(0.1)
 group.set_goal_position_tolerance(0.1)
 
-start_x = 0.500
-start_y = 0.600
-start_z = 0.800
-square_size = 0.100
+start_x = 0.150
+start_y = 0.750
+start_z = 0.500
+square_size = 0.250
 
 waypoints = []
 
@@ -46,13 +46,13 @@ wpose.position.z = start_z
 waypoints.append(copy.deepcopy(wpose))
 
 wpose.position.x = start_x
-wpose.position.y = start_y + square_size
-wpose.position.z = start_z
+wpose.position.y = start_y
+wpose.position.z = start_z + square_size
 waypoints.append(copy.deepcopy(wpose))
 
 wpose.position.x = start_x + square_size
-wpose.position.y = start_y + square_size
-wpose.position.z = start_z
+wpose.position.y = start_y
+wpose.position.z = start_z + square_size
 waypoints.append(copy.deepcopy(wpose))
 
 wpose.position.x = start_x + square_size

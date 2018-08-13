@@ -25,15 +25,15 @@ group = moveit_commander.MoveGroupCommander("right_arm")
 rospy.sleep(1)
 time.sleep(1)
 
-group.set_goal_orientation_tolerance(0.1)
+group.set_goal_orientation_tolerance(0.5)
 group.set_goal_position_tolerance(0.1)
 
 waypoints = []
 
 start_x = 0.600
-start_y = 0.700
-start_z = 0.800
-circle_radius = 0.100
+start_y = 0.650
+start_z = 0.700
+circle_radius = 0.200
 
 wpose = geometry_msgs.msg.Pose()
 wpose.orientation.w = 0.707
